@@ -1,0 +1,11 @@
+<p>Status List</p>
+<table>
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+    </tr>
+    <tr *ngFor="let s of statusList ; let i=index">
+        <td>{{ s.Id }}</td>
+        <td>{{ s.Name }}</td>
+    </tr>
+</table>

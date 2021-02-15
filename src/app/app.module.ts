@@ -12,6 +12,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { BsModalService } from 'ngx-bootstrap/modal';
 import { ModalModule } from 'ngx-bootstrap/modal';
 import { ViewOwnerComponent } from './owner/view-owner/view-owner.component';
+import { DataComponent } from './data/data.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { ViewOwnerComponent } from './owner/view-owner/view-owner.component';
     PropertyComponent,
     OwnerComponent,
     ViewPropertyComponent,
-    ViewOwnerComponent
+    ViewOwnerComponent,
+    DataComponent
   ],
   imports: [
     BrowserModule,
@@ -27,7 +29,7 @@ import { ViewOwnerComponent } from './owner/view-owner/view-owner.component';
     HttpClientModule,
     ModalModule.forRoot() 
   ],
-  providers: [OwnerService,ViewPropertyComponent,ViewOwnerComponent],
+  providers: [OwnerService],
   bootstrap: [AppComponent],
   entryComponents: [
     ViewPropertyComponent,
